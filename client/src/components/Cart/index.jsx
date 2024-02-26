@@ -45,7 +45,7 @@ const Cart = () => {
   function calculateTotal() {
     let sum = 0;
     cart.forEach((item) => {
-      sum += parseInt(item.price,10) * parseInt(item.purchaseQuantity,10);
+      sum += parseFloat(item.price) * parseFloat(item.purchaseQuantity);
     });
     console.log("cart:",cart);
     return sum.toFixed(2);
