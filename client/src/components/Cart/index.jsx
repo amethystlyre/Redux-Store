@@ -47,7 +47,7 @@ const Cart = () => {
     cart.forEach((item) => {
       sum += parseFloat(item.price) * parseFloat(item.purchaseQuantity);
     });
-    console.log("cart:",cart);
+    //console.log("cart:",cart);
     return sum.toFixed(2);
   }
 
